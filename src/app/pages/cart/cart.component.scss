@@ -1,0 +1,92 @@
+.container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fffafc;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+  color: #dc5c8a;
+  font-weight: bold;
+}
+
+.table {
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.table th {
+  background-color: #ffe4ec;
+  color: #6e2142;
+  font-weight: 600;
+}
+
+.table td {
+  vertical-align: middle;
+}
+
+img {
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+input.form-control {
+  border: 1px solid #ffd1dc;
+  border-radius: 6px;
+  text-align: center;
+}
+
+input.form-control:focus {
+  box-shadow: 0 0 0 0.2rem rgba(255, 182, 193, 0.25);
+  border-color: #f78da7;
+}
+
+.btn-danger {
+  background-color: #f67280;
+  border-color: #f67280;
+}
+
+.btn-danger:hover {
+  background-color: #e35d6a;
+  border-color: #e35d6a;
+}
+
+.btn-warning {
+  background-color: #ffd166;
+  border-color: #ffd166;
+  color: #5e4c2e;
+}
+
+.btn-warning:hover {
+  background-color: #fcbf49;
+  border-color: #fcbf49;
+  color: #3c2e18;
+}
+
+.empty-message {
+  padding: 2rem;
+  background-color: #fff0f6;
+  border: 2px dashed #f78da7;
+  border-radius: 10px;
+}
+
+.empty-message h3 {
+  color: #f78da7;
+  font-weight: bold;
+}
+
+.empty-message p {
+  color: #6c6a74;
+}
+
+.empty-message button {
+  margin-top: 1rem;
+  background-color: #f78da7;
+  border: none;
+}
+
+.empty-message button:hover {
+  background-color: #e05c84;
+}

@@ -1,0 +1,25 @@
+<div class="card-container">
+  @for(products of product ; track products.id){
+  <div class="card">
+    <img src="{{ products.img }}" class="card-img" />
+    <div class="card-info">
+      <strong class="card-title">
+        {{
+          products.name.length > 15
+            ? products.name.substring(0, 20) + "..."
+            : products.name
+        }}
+      </strong>
+      <strong class="card-products"
+        >{{ "card.price" | translate }}: {{ products.price }}$
+      </strong>
+      <a [routerLink]="['/products', products.id]" class="card-link">
+        {{ "card.description" | translate }} >
+      </a>
+      <button (click)="addToCart(products)" class="card-button">
+        {{ "card.addToCart" | translate }}
+      </button>
+    </div>
+  </div>
+  }
+</div>

@@ -1,0 +1,50 @@
+<link
+  href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+  rel="stylesheet"
+/>
+
+<div class="container my-4">
+  @if(products){
+  <div class="card mb-3">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img
+          [src]="products.img"
+          [alt]="products.name"
+          class="img-fluid rounded-start"
+        />
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">{{ products.name }}</h5>
+          <p class="card-text fw-bold">
+            {{ "card.price" | translate }}: {{ products.price }}$
+          </p>
+          <p class="card-text">
+            <i class="ri-expand-height-fill"></i>
+            {{ "card.height" | translate }}: {{ products.DimensionsHeight }}
+          </p>
+          <p class="card-text">
+            <i class="ri-expand-width-fill me-1"></i>
+            {{ "card.width" | translate }}: {{ products.DimensionsWidth }}
+          </p>
+          <div>
+            <strong>{{ "card.bouquet" | translate }}:</strong>
+            <ul class="list-unstyled ms-3 mt-2">
+              <li>
+                {{ products.Roses }}
+              </li>
+              <li>
+                {{ products.Wrap }}
+              </li>
+            </ul>
+          </div>
+          <button (click)="addToCart(products)" class="card-button">
+            🛒 {{ "card.addToCart" | translate }}
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  }
+</div>

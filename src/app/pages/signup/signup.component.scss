@@ -1,0 +1,232 @@
+// .container {
+//   width: 600px;
+//   height: 350px;
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+//   display: inline-flex;
+// }
+
+
+// .frontbox {
+//   background-color: white;
+//   border-radius: 20px;
+//   height: 100%;
+//   width: 50%;
+//   z-index: 10;
+//   position: absolute;
+//   right: 0;
+//   margin-right: 3%;
+//   margin-left: 3%;
+//   transition: right 0.8s ease-in-out;
+// }
+
+ 
+// .backbox {
+//   background-color: #404040;
+//   width: 80%;
+//   height: 80%;
+//   position: absolute;
+//   transform: translate(0, -50%);
+//   top: 50%;
+//   display: inline-flex;
+// }
+
+// .signupMsg {
+//   width: 50%;
+//   height: 100%;
+//   font-size: 15px;
+//   box-sizing: border-box;
+// }
+
+// .signupMsg .title {
+//   font-weight: 300;
+//   font-size: 23px;
+// }
+
+// .signupMsg p {
+//   font-weight: 100;
+// }
+
+// .textcontent {
+//   color: white;
+//   margin-top: 65px;
+//   margin-left: 12%;
+// }
+
+// .signupMsg button {
+//   background-color: #404040;
+//   border: 2px solid white;
+//   border-radius: 10px;
+//   color: white;
+//   font-size: 12px;
+//   font-weight: 300;
+//   padding: 10px;
+//   margin-top: 20px;
+// }
+// .signupMsg button:hover {
+//   background-color: white;
+//   color: #404040;
+//   cursor: pointer;
+// }
+
+// .signup {
+//   padding: 20px;
+//  }
+
+// .signup h2 {
+//   color: #35b729;
+//   font-size: 22px;
+//   text-align: center;
+// }
+
+// .inputbox {
+//   margin-top: 10px;
+// }
+
+// .signup input {
+//   display: block;
+//   width: 100%;
+//   height: 35px;
+//   background-color: #f2f2f2;
+//   border: none;
+//   margin-bottom: 5px;
+//   font-size: 12px;
+// }
+
+// .signup button {
+//   color: black;
+//   font-size: 14px;
+//   font-weight: 300;
+//   padding: 10px;
+//   border-radius: 10px;
+//   right: 30px;
+//   bottom: 30px;
+//   cursor: pointer;
+  
+// }
+// .signup button:hover {
+//   background-color: #35b729;
+//   color: white;
+//   cursor: pointer;
+// }
+
+// .errorMessage{
+//   color: red;
+//   font-size: 12px;
+//   margin-top: 10px;
+//   margin-bottom: 10px;
+
+// }
+
+
+
+ .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 2rem;
+}
+
+ .backbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff0f5;  
+  padding: 2rem;
+  margin-right: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.frontbox {
+   padding: 2.5rem;
+  background-color: #ffffff;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+}
+
+ h2 {
+  text-align: center;
+  color: #333;
+  font-family: 'Arial', sans-serif;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+ .form-container {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin-bottom: 1rem;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+input:focus {
+  border-color: #f06292;
+  outline: none;
+  background-color: #ffe6f0;
+}
+
+ button {
+  background-color: #f06292;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s ease;
+}
+
+button:disabled {
+  background-color: #e0a1b7;
+}
+
+button:hover {
+  background-color: #e91e63;
+  transform: scale(1.05);
+}
+
+ .textcontent {
+  text-align: center;
+}
+
+.textcontent .title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #f06292;
+}
+
+a {
+  text-decoration: none;
+  color: #f06292;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #e91e63;
+}
+
+ .errorMessage {
+  color: red;
+  font-size: 14px;
+  margin-bottom: 0.5rem;
+}
+
+.errorMessage samp {
+  font-weight: 500;
+  color: #f44336;
+}
+
+ 

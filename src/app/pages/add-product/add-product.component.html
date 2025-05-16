@@ -1,0 +1,162 @@
+<div class="container">
+  <h2 class="text-center mb-4">Add New Product</h2>
+
+  <form (ngSubmit)="onSubmit()" [formGroup]="addProductForm">
+    <div class="form-group mb-3">
+      <label for="name">Product Name</label>
+      <input
+        id="name"
+        formControlName="name"
+        class="form-control"
+        type="text"
+        placeholder="Enter product name"
+        required
+      />
+      <div
+        *ngIf="
+          addProductForm.controls['name'].touched &&
+          addProductForm.controls['name'].invalid
+        "
+        class="text-danger"
+      >
+        Product name is required.
+      </div>
+    </div>
+
+    <div class="form-group mb-3">
+      <label for="price">Price</label>
+      <input
+        id="price"
+        formControlName="price"
+        class="form-control"
+        type="number"
+        placeholder="Enter product price"
+        required
+      />
+      <div
+        *ngIf="
+          addProductForm.controls['price'].touched &&
+          addProductForm.controls['price'].invalid
+        "
+        class="text-danger"
+      >
+        Price is required and should be a valid number.
+      </div>
+    </div>
+
+    <div class="form-group mb-3">
+      <label for="img">Image URL</label>
+      <input
+        id="img"
+        formControlName="img"
+        class="form-control"
+        type="url"
+        placeholder="Enter image URL"
+        required
+      />
+      <div
+        *ngIf="
+          addProductForm.controls['img'].touched &&
+          addProductForm.controls['img'].invalid
+        "
+        class="text-danger"
+      >
+        Image URL is required.
+      </div>
+    </div>
+
+    <div class="form-group mb-3">
+      <label for="DimensionsHeight">Height (cm)</label>
+      <input
+        id="DimensionsHeight"
+        formControlName="DimensionsHeight"
+        class="form-control"
+        type="text"
+        placeholder="Enter height of the bouquet"
+        required
+      />
+      <div
+        *ngIf="
+          addProductForm.controls['DimensionsHeight'].touched &&
+          addProductForm.controls['DimensionsHeight'].invalid
+        "
+        class="text-danger"
+      >
+        Height is required.
+      </div>
+    </div>
+
+    <div class="form-group mb-3">
+      <label for="DimensionsWidth">Width (cm)</label>
+      <input
+        id="DimensionsWidth"
+        formControlName="DimensionsWidth"
+        class="form-control"
+        type="text"
+        placeholder="Enter width of the bouquet"
+        required
+      />
+      <div
+        *ngIf="
+          addProductForm.controls['DimensionsWidth'].touched &&
+          addProductForm.controls['DimensionsWidth'].invalid
+        "
+        class="text-danger"
+      >
+        Width is required.
+      </div>
+    </div>
+
+    <div class="form-group mb-3">
+      <label for="Roses">Number of Roses</label>
+      <input
+        id="Roses"
+        formControlName="Roses"
+        class="form-control"
+        type="text"
+        placeholder="Enter number of Roses Ex : Red Roses: 25"
+        required
+      />
+      <div
+        *ngIf="
+          addProductForm.controls['Roses'].touched &&
+          addProductForm.controls['Roses'].invalid
+        "
+        class="text-danger"
+      >
+        Number of Roses is required.
+      </div>
+    </div>
+
+    <div class="form-group mb-3">
+      <label for="Wrap">Wraps </label>
+      <input
+        id="Wrap"
+        formControlName="Wrap"
+        class="form-control"
+        type="text"
+        placeholder="Enter Wrap Ex : Black Wrap"
+        required
+      />
+      <div
+        *ngIf="
+          addProductForm.controls['Wrap'].touched &&
+          addProductForm.controls['Wrap'].invalid
+        "
+        class="text-danger"
+      >
+        Wrap type is required.
+      </div>
+    </div>
+
+    <div class="text-center">
+      <button
+        type="submit"
+        class="btn btn-primary"
+        [disabled]="addProductForm.invalid"
+      >
+        Add Product
+      </button>
+    </div>
+  </form>
+</div>

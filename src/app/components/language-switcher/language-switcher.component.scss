@@ -1,0 +1,35 @@
+.language-switcher {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+
+.language-switcher a {
+  cursor: pointer;
+  color: #f06292;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 0.95rem;
+}
+
+.language-switcher a {
+  cursor: pointer;
+  font-weight: 600;
+  color: #f06292;
+  transition: color 0.3s ease;
+}
+
+.language-switcher a:hover {
+  color: #c2185b;
+  text-decoration: underline;
+}
+
+.language-switcher a.active {
+  color: #ad1457;
+  font-weight: bold;
+  text-decoration: underline;
+}
+

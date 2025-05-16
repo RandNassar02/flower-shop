@@ -1,0 +1,52 @@
+{
+  "app": {
+    "title": "Flower Shop"
+  },
+  "header": {
+    "title": "Flower",
+    "cart": "Cart",
+    "login": "Login",
+    "signup": "Sign Up",
+    "logout": "Logout",
+    "welcome": "Hello,"
+  },
+
+  "login": {
+    "title": "LOG IN",
+    "email": "Email",
+    "password": "Password",
+    "login": "Login"
+  },
+  "signup": {
+    "title": "SIGN UP",
+    "name": "User Name",
+    "email": "Email",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "signup": "Sign Up"
+  },
+  "card": {
+    "price": "price",
+    "description": "Learn More",
+    "buy": "Buy",
+    "height": "Height",
+    "width": "Width",
+    "bouquet": "Bouquet Includes",
+    "addToCart": "Add to Cart"
+  },
+  "cart": {
+    "title": "Shopping Cart",
+    "name": "Name",
+    "image": "Image",
+    "price": "price",
+    "quantity": "Quantity",
+    "total": "Total",
+    "actions": "Actions",
+    "remove": "Remove",
+    "clear": "Clear Cart",
+    "totalPrice": "Total Price",
+    "emptyMessage": "Your cart is empty!",
+    "message": "Add some flowers to make your day beautiful!",
+    "shopNow": "Shop Now"
+  }
+}

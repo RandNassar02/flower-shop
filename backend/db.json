@@ -1,0 +1,339 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Moon's Crown Roses Favours",
+      "price": 49.99,
+      "img": "https://res.cloudinary.com/dblomu3ce/image/upload/v1746727884/Moon_s_Crown_Roses_Favours_aib0ts.jpg",
+      "DimensionsHeight": "40cm",
+      "DimensionsWidth": "30cm",
+      "Roses": "Red Roses: 25",
+      "Wrap": "Dark Teal Wrap"
+    },
+    {
+      "id": "2",
+      "name": "Soft Petals of Love Bouquet",
+      "price": 49.99,
+      "img": "https://res.cloudinary.com/dblomu3ce/image/upload/v1746727926/Soft_Petals_of_Love_Bouquet_i6yhz6.jpg",
+      "DimensionsHeight": "40cm",
+      "DimensionsWidth": "20cm",
+      "Roses": "Peach Baby Rose: 10 Pink Baby Rose: 10"
+    },
+    {
+      "id": "3",
+      "name": "Harmonious Yellow Rose Bouquet",
+      "price": 49.99,
+      "img": "https://res.cloudinary.com/dblomu3ce/image/upload/v1746728133/Harmonious_Yellow_Rose_Bouquet_u8nesx.jpg",
+      "DimensionsHeight": "40cm",
+      "DimensionsWidth": "20cm",
+      "Roses": "Yellow Rose: 50",
+      "Wrap": "Black Wrapping"
+    },
+    {
+      "id": "4",
+      "name": "Esperance Rose Flowers Bouquet",
+      "price": 25,
+      "img": "https://res.cloudinary.com/dblomu3ce/image/upload/v1747322008/8c41dcb2-b8f4-4bab-9e7a-e238f8f68aad_mclxtk.jpg",
+      "DimensionsHeight": "50cm",
+      "DimensionsWidth": "25cm",
+      "Roses": "Esperance Rose: 20",
+      "Wrap": "Pink & White Wrap"
+    },
+    {
+      "id": "5",
+      "name": "Violet Charm Bouquet",
+      "price": 35,
+      "img": "https://res.cloudinary.com/dblomu3ce/image/upload/v1747322263/82548e0c-78df-484b-b760-11433bef177b_khkmzl.jpg",
+      "DimensionsHeight": "40cm",
+      "DimensionsWidth": "20cm",
+      "Roses": "Purple Baby Roses: 25",
+      "Wrap": "Cream Wrapping"
+    },
+    {
+      "id": "6",
+      "name": "Red Rose Bouquet",
+      "price": 500000,
+      "img": "https://res.cloudinary.com/dblomu3ce/image/upload/v1747322425/19f122bf-9e5a-4ce7-8bf9-ece93c1090ab_mbaoqe.jpg",
+      "DimensionsHeight": "40cm",
+      "DimensionsWidth": "20cm",
+      "Roses": "Red Roses: 35",
+      "Wrap": "White Wrap"
+    },
+    {
+      "id": "1e12",
+      "name": "Lovely Romance Bouquet",
+      "price": 106,
+      "img": "https://res.cloudinary.com/dblomu3ce/image/upload/v1747322591/3a9d301b-2970-4dd2-a0dd-b6e59bc8aa73_grvpsu.jpg",
+      "DimensionsHeight": "55cm ",
+      "DimensionsWidth": "68cm",
+      "Roses": "Red Roses: 50 ,White Roses : 50",
+      "Wrap": "Black Wrap"
+    },
+    {
+      "id": "c52b",
+      "name": "test",
+      "price": 1000000000000,
+      "img": "https://res.cloudinary.com/dblomu3ce/image/upload/v1746727255/samples/cup-on-a-table.jpg",
+      "DimensionsHeight": "22cm",
+      "DimensionsWidth": "10cm",
+      "Roses": "Red Roses: 50"
+    },
+    {
+      "id": "adbb",
+      "name": "Test",
+      "price": 12,
+      "img": "test",
+      "DimensionsHeight": "23cm",
+      "DimensionsWidth": "12cm",
+      "Roses": "12 red",
+      "Wrap": "blak"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "name": "Admin",
+      "email": "admin@test.com",
+      "password": "admin",
+      "Role": "admin"
+    },
+    {
+      "id": "2",
+      "name": "User",
+      "email": "user@test.com",
+      "password": "user",
+      "Role": "user"
+    },
+    {
+      "id": "215c",
+      "name": "Test1",
+      "email": "test@test.com",
+      "password": "test1",
+      "Role": "user"
+    },
+    {
+      "id": "4c0e",
+      "name": "Test2",
+      "email": "test2@test.com",
+      "password": "test2",
+      "Role": "user"
+    },
+    {
+      "id": "7c70",
+      "name": "Test3",
+      "email": "test3@test.com",
+      "password": "test3",
+      "Role": "user"
+    }
+  ],
+  "cart": [
+    {
+      "id": "ec35",
+      "idProduct": "3",
+      "idUser": "aae6",
+      "name": "Harmonious Yellow Rose Bouquet",
+      "price": 49.99,
+      "quantity": 1
+    },
+    {
+      "id": "fca9",
+      "idProduct": "3",
+      "idUser": "aae6",
+      "name": "Harmonious Yellow Rose Bouquet",
+      "price": 49.99,
+      "quantity": 1
+    },
+    {
+      "id": "4de7",
+      "idProduct": "1",
+      "idUser": "aae6",
+      "name": "Moon's Crown Roses Favours",
+      "price": 49.99,
+      "quantity": 1
+    },
+    {
+      "id": "4fa5",
+      "idProduct": "2",
+      "idUser": "aae6",
+      "name": "Soft Petals of Love Bouquet",
+      "price": 49.99,
+      "quantity": 1
+    },
+    {
+      "id": "7444",
+      "idProduct": "3",
+      "idUser": "aae6",
+      "name": "Harmonious Yellow Rose Bouquet",
+      "price": 49.99,
+      "quantity": 1
+    },
+    {
+      "id": "a3dc",
+      "idProduct": "10b8",
+      "idUser": "2",
+      "name": "Lovely Romance Bouquet",
+      "price": 106,
+      "quantity": 1
+    },
+    {
+      "id": "6174",
+      "idProduct": "10b8",
+      "idUser": "2",
+      "name": "Lovely Romance Bouquet",
+      "price": 106,
+      "quantity": 1
+    },
+    {
+      "id": "3d56",
+      "idProduct": "1e12",
+      "idUser": "2",
+      "name": "Lovely Romance Bouquet",
+      "price": 106,
+      "quantity": 1
+    },
+    {
+      "id": "0498",
+      "idProduct": "3",
+      "idUser": "86cb",
+      "name": "Harmonious Yellow Rose Bouquet",
+      "price": 49.99,
+      "quantity": 1
+    },
+    {
+      "id": "1ceb",
+      "idProduct": "1",
+      "idUser": "86cb",
+      "name": "Moon's Crown Roses Favours",
+      "price": 49.99,
+      "quantity": 3
+    },
+    {
+      "id": "e3ea",
+      "idProduct": "1",
+      "idUser": "2",
+      "name": "Moon's Crown Roses Favours",
+      "price": 49.99,
+      "quantity": 1
+    },
+    {
+      "id": "98bc",
+      "idProduct": "4",
+      "idUser": "2",
+      "name": "Esperance Rose Flowers Bouquet",
+      "price": 25,
+      "quantity": 1
+    },
+    {
+      "id": "efbb",
+      "idProduct": "2",
+      "idUser": "86cb",
+      "name": "Soft Petals of Love Bouquet",
+      "price": 49.99,
+      "quantity": 1
+    },
+    {
+      "id": "1c73",
+      "idProduct": "2",
+      "idUser": "911e",
+      "name": "Soft Petals of Love Bouquet",
+      "price": 49.99,
+      "quantity": 3
+    },
+    {
+      "id": "f96a",
+      "idProduct": "1",
+      "idUser": "911e",
+      "name": "Moon's Crown Roses Favours",
+      "price": 49.99,
+      "quantity": 1
+    },
+    {
+      "id": "4f89",
+      "idProduct": "3",
+      "idUser": "911e",
+      "name": "Harmonious Yellow Rose Bouquet",
+      "price": 49.99,
+      "quantity": 1
+    },
+    {
+      "id": "0e7f",
+      "idProduct": "2",
+      "idUser": "911e",
+      "name": "Soft Petals of Love Bouquet",
+      "price": 49.99,
+      "quantity": 1
+    },
+    {
+      "id": "2425",
+      "idProduct": "2",
+      "idUser": "a63c",
+      "name": "Soft Petals of Love Bouquet",
+      "price": 49.99,
+      "quantity": 1
+    },
+    {
+      "id": "1623",
+      "idProduct": "2",
+      "idUser": "af4a",
+      "name": "Soft Petals of Love Bouquet",
+      "price": 49.99,
+      "quantity": 1
+    },
+    {
+      "id": "d575",
+      "idProduct": "4",
+      "idUser": "af4a",
+      "name": "Esperance Rose Flowers Bouquet",
+      "price": 25,
+      "quantity": 1
+    },
+    {
+      "id": "64c7",
+      "idProduct": "3",
+      "idUser": "af4a",
+      "name": "Harmonious Yellow Rose Bouquet",
+      "price": 49.99,
+      "quantity": 1
+    },
+    {
+      "id": "1c06",
+      "idProduct": "3",
+      "idUser": "af4a",
+      "name": "Harmonious Yellow Rose Bouquet",
+      "price": 49.99,
+      "quantity": 1
+    },
+    {
+      "id": "a73d",
+      "idProduct": "4",
+      "idUser": "af4a",
+      "name": "Esperance Rose Flowers Bouquet",
+      "price": 25,
+      "quantity": 1
+    },
+    {
+      "id": "b6cc",
+      "idProduct": "4",
+      "idUser": "af4a",
+      "name": "Esperance Rose Flowers Bouquet",
+      "price": 25,
+      "quantity": 1
+    },
+    {
+      "id": "4d16",
+      "idProduct": "5",
+      "idUser": "af4a",
+      "name": "Violet Charm Bouquet",
+      "price": 35,
+      "quantity": 1
+    },
+    {
+      "id": "7382",
+      "idProduct": "4",
+      "idUser": "215c",
+      "name": "Esperance Rose Flowers Bouquet",
+      "price": 25,
+      "quantity": 3
+    }
+  ]
+}

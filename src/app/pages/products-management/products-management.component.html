@@ -1,0 +1,124 @@
+<div class="container mt-5">
+  <h2 class="text-center mb-4">Products Management</h2>
+
+  <table class="table table-bordered table-hover align-middle text-center">
+    <thead class="table-light">
+      <tr>
+        <th>Image</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Dimensions</th>
+        <th>Roses</th>
+        <th>Wrap</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let product of products">
+        <td *ngIf="editingProduct?.id !== product.id">
+          <img
+            [src]="product.img"
+            alt="Product Image"
+            class="img-fluid img-thumbnail"
+            style="width: 100px"
+          />
+        </td>
+
+        <td *ngIf="editingProduct?.id === product.id">
+          <input
+            [(ngModel)]="editingProduct!.img"
+            type="text"
+            class="form-control"
+          />
+        </td>
+
+        <td *ngIf="editingProduct?.id !== product.id">{{ product.name }}</td>
+        <td *ngIf="editingProduct?.id === product.id">
+          <input
+            [(ngModel)]="editingProduct!.name"
+            type="text"
+            class="form-control"
+          />
+        </td>
+
+        <td *ngIf="editingProduct?.id !== product.id">${{ product.price }}</td>
+        <td *ngIf="editingProduct?.id === product.id">
+          <input
+            [(ngModel)]="editingProduct!.price"
+            type="number"
+            class="form-control"
+          />
+        </td>
+
+        <td *ngIf="editingProduct?.id !== product.id">
+          {{ product.DimensionsHeight }} x {{ product.DimensionsWidth }}
+        </td>
+        <td *ngIf="editingProduct?.id === product.id">
+          <input
+            [(ngModel)]="editingProduct!.DimensionsHeight"
+            type="text"
+            class="form-control"
+          />
+          <input
+            [(ngModel)]="editingProduct!.DimensionsWidth"
+            type="text"
+            class="form-control"
+          />
+        </td>
+
+        <td *ngIf="editingProduct?.id !== product.id">{{ product.Roses }}</td>
+        <td *ngIf="editingProduct?.id === product.id">
+          <input
+            [(ngModel)]="editingProduct!.Roses"
+            type="text"
+            class="form-control"
+          />
+        </td>
+
+        <td *ngIf="editingProduct?.id !== product.id">{{ product.Wrap }}</td>
+        <td *ngIf="editingProduct?.id === product.id">
+          <input
+            [(ngModel)]="editingProduct!.Wrap"
+            type="text"
+            class="form-control"
+          />
+        </td>
+
+        <td>
+          <div class="d-flex flex-column gap-2">
+            <button
+              *ngIf="editingProduct?.id !== product.id"
+              (click)="startEdit(product)"
+              class="btn btn-sm btn-primary"
+            >
+              Edit
+            </button>
+
+            <button
+              *ngIf="editingProduct?.id === product.id"
+              (click)="saveEdit()"
+              class="btn btn-sm btn-success"
+            >
+              Save
+            </button>
+
+            <button
+              *ngIf="editingProduct?.id === product.id"
+              (click)="cancelEdit()"
+              class="btn btn-sm btn-secondary"
+            >
+              Cancel
+            </button>
+
+            <button
+              (click)="deleteProduct(product.id!.toString())"
+              class="btn btn-sm btn-danger"
+            >
+              Delete
+            </button>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

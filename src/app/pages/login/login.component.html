@@ -1,0 +1,55 @@
+<section class="container">
+  <div class="backbox">
+    <div class="loginMsg">
+      <div class="textcontent">
+        <p class="title">Don't have an account?</p>
+        <p>Register now and begin your shopping experience!.</p>
+        <button [routerLink]="['/signup']">Sign Up</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="frontbox">
+    <div class="login">
+      <h2>{{ "login.title" | translate }}</h2>
+      <div class="form-container inputbox">
+        <form [formGroup]="loginForm" (ngSubmit)="onLogin()">
+          <div class="email">
+            <label for="email">{{ "login.email" | translate }}:</label>
+            <input
+              type="email"
+              formControlName="email"
+              placeholder="Email"
+              required
+            />
+            <div class="errorMessage">
+              @if(loginForm.controls['email'].touched &&
+              loginForm.controls['email'].invalid){
+              <samp>Valid email is required.</samp>
+              }
+            </div>
+          </div>
+          <div class="password">
+            <label for="password">{{ "login.password" | translate }}:</label>
+            <input
+              type="password"
+              formControlName="password"
+              placeholder="Password"
+              required
+            />
+            <div class="errorMessage">
+              @if(loginForm.controls['password'].touched &&
+              loginForm.controls['password'].invalid){
+              <samp>Password is required.</samp>
+              }
+            </div>
+          </div>
+
+          <button type="submit" class="opacity" [disabled]="loginForm.invalid">
+            {{ "login.login" | translate }}
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,70 @@
+<div class="container">
+  <h2 class="text-center mb-4">🛒 {{ "cart.title" | translate }}</h2>
+
+  <div *ngIf="cartItems.length > 0; else emptyCart">
+    <table class="table table-bordered table-hover align-middle text-center">
+      <thead class="table-light">
+        <tr>
+          <th>{{ "cart.image" | translate }}</th>
+          <th>{{ "cart.name" | translate }}</th>
+          <th>{{ "cart.price" | translate }}</th>
+          <th>{{ "cart.quantity" | translate }}</th>
+          <th>{{ "cart.total" | translate }}</th>
+          <th>{{ "cart.actions" | translate }}</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of cartItems">
+          <td>
+            <img
+              [src]="getProductImg(item.idProduct)"
+              alt="{{ item.name }}"
+              width="100"
+            />
+          </td>
+          <td>{{ item.name }}</td>
+          <td>${{ item.price | number : "1.2-2" }}</td>
+          <td style="width: 120px">
+            <input
+              type="number"
+              class="form-control"
+              [(ngModel)]="item.quantity"
+              (ngModelChange)="onQuantityChange(item)"
+              min="1"
+            />
+          </td>
+          <td>${{ item.price * item.quantity | number : "1.2-2" }}</td>
+          <td>
+            <button
+              class="btn btn-danger btn-sm"
+              (click)="removeItem(item.id!)"
+            >
+              🗑️ {{ "cart.remove" | translate }}
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="d-flex justify-content-between align-items-center mt-4">
+      <h4>
+        {{ "cart.total" | translate }}: ${{ totalPrice | number : "1.2-2" }}
+      </h4>
+      <button class="btn btn-warning" (click)="clearCart()">
+        🧹 {{ "cart.clear" | translate }}
+      </button>
+    </div>
+  </div>
+
+  <ng-template #emptyCart>
+    <div class="alert text-center">
+      <div class="empty-message">
+        <h3>{{ "cart.emptyMessage" | translate }} 🥀</h3>
+        <p>{{ "cart.message" | translate }}</p>
+        <button class="btn btn-primary" [routerLink]="['/']">
+          {{ "cart.shopNow" | translate }}
+        </button>
+      </div>
+    </div>
+  </ng-template>
+</div>

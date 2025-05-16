@@ -1,0 +1,49 @@
+<link
+  href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+  rel="stylesheet"
+/>
+<div class="header">
+  <div class="header-logo" [routerLink]="['/']">
+    <h1 class="header-title" [routerLink]="['/']">
+      <i class="ri-flower-line"></i>
+      {{ "header.title" | translate }}
+    </h1>
+  </div>
+
+  <div class="header-right">
+    @if(userService.isAdmin()){
+    <span class="username"
+      >{{ "header.welcome" | translate }} {{ username }}!</span
+    >
+    <button [routerLink]="['/orders']" class="btn btn-primary">orders</button>
+    <button [routerLink]="['/usersManagement']" class="btn btn-secondary">
+      user management
+    </button>
+    <button [routerLink]="['/productsManagement']" class="btn btn-warning">
+      product management
+    </button>
+    <button (click)="goToAddProduct()" class="btn btn-info">add product</button>
+    <button (click)="logout()">{{ "header.logout" | translate }}</button>
+    } @else if(userService.isUserLoggedIn()){
+    <span class="username"
+      >{{ "header.welcome" | translate }} {{ username }}!</span
+    >
+    <a [routerLink]="['/cart']" style="font-size: 20px"> 🛒 </a>
+
+    <!-- <a [routerLink]="['/cart']">
+      🛒{{ "header.cart" | translate }} {{ cartCount }}
+    </a> -->
+    <button (click)="logout()" class="button">
+      {{ "header.logout" | translate }}
+    </button>
+
+    } @else{
+    <button (click)="goToLogin()" class="button">
+      {{ "header.login" | translate }}
+    </button>
+    <button (click)="goToSignup()" class="button">
+      {{ "header.signup" | translate }}
+    </button>
+    }
+  </div>
+</div>

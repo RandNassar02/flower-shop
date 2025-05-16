@@ -1,0 +1,90 @@
+<section class="container">
+  <div class="backbox">
+    <div class="signupMsg">
+      <div class="textcontent">
+        <p class="title">Have an account?</p>
+        <p>Log in to continue your shopping.</p>
+        <button [routerLink]="['/login']">
+          {{ "header.login" | translate }}
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="frontbox">
+    <div class="signup">
+      <h2>{{ "signup.title" | translate }}</h2>
+      <div class="form-container inputbox">
+        <form [formGroup]="signupForm" (ngSubmit)="onSignup()">
+          <div class="name">
+            <label for="name">{{ "signup.name" | translate }}:</label>
+            <input id="name" formControlName="name" placeholder="Name" />
+            <div class="errorMessage">
+              @if(signupForm.controls['name'].touched &&
+              signupForm.controls['name'].invalid){
+              <samp>Name is required.</samp>}
+            </div>
+          </div>
+
+          <div class="email">
+            <label for="email">{{ "signup.email" | translate }}:</label>
+            <input id="email" formControlName="email" placeholder="Email" />
+            <div class="errorMessage">
+              @if(signupForm.controls['email'].touched &&
+              signupForm.controls['email'].invalid){
+              <samp>Valid email is required.</samp>
+              }
+            </div>
+            <div class="errorMessage">
+              @if(emailExistsError){
+              <samp>This email is already registered.</samp>
+              }
+            </div>
+          </div>
+
+          <div class="password">
+            <label for="password">{{ "signup.password" | translate }}:</label>
+            <input
+              id="password"
+              formControlName="password"
+              type="password"
+              placeholder="Password"
+            />
+            <div class="errorMessage">
+              @if(signupForm.controls['password'].touched &&
+              signupForm.controls['password'].invalid){
+              <samp>Password is required.</samp>
+              }
+            </div>
+          </div>
+
+          <div class="confirm-password">
+            <label for="confirmPassword"
+              >{{ "signup.confirmPassword" | translate }}:</label
+            >
+            <input
+              id="confirmPassword"
+              formControlName="confirmPassword"
+              type="password"
+              placeholder="Confirm Password"
+            />
+            <div class="errorMessage">
+              @if(signupForm.controls['confirmPassword'].touched &&
+              signupForm.controls['confirmPassword'].invalid){
+              <samp>Confirm password is required.</samp>
+              }
+            </div>
+            <div class="errorMessage">
+              @if(signupForm.errors?.['passwordMismatch'] &&
+              signupForm.touched){
+              <samp>Passwords do not match.</samp>
+              }
+            </div>
+          </div>
+          <button type="submit" [disabled]="signupForm.invalid">
+            {{ "signup.signup" | translate }}
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
